@@ -317,6 +317,7 @@ button:focus {
 
 /* ==========================================================================
 	 2.4  Pre Loader
+<<<<<<< HEAD
 	 ========================================================================== */
 #loader {
   position: fixed;
@@ -400,6 +401,91 @@ button:focus {
   transition: all 0.2s linear;
 }
 
+=======
+	 ========================================================================== */
+#loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #333;
+  z-index: 9999999999;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  top: 45%;
+  position: relative;
+  margin: 0px auto;
+}
+
+.double-bounce1, .double-bounce2 {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #61D2B4;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-animation: sk-bounce 2.0s infinite ease-in-out;
+  animation: sk-bounce 2.0s infinite ease-in-out;
+}
+
+.double-bounce2 {
+  -webkit-animation-delay: -1.0s;
+  animation-delay: -1.0s;
+}
+
+@-webkit-keyframes sk-bounce {
+  0%, 100% {
+    -webkit-transform: scale(0);
+  }
+  50% {
+    -webkit-transform: scale(1);
+  }
+}
+
+@keyframes sk-bounce {
+  0%, 100% {
+    transform: scale(0);
+    -webkit-transform: scale(0);
+  }
+  50% {
+    transform: scale(1);
+    -webkit-transform: scale(1);
+  }
+}
+
+/* ========================================================================== 
+  -2.5 Scroll To Up 
+   ========================================================================== */
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 18px;
+  right: 15px;
+}
+
+.back-to-top i {
+  display: block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  border-radius: 4px;
+  background-color: #61D2B4;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+>>>>>>> 08e88deac8f5da091fe9915c365287e1078a6e1f
 /* ==========================================================================
    3. Hero Area
    ========================================================================== */
@@ -464,6 +550,7 @@ button:focus {
 
 /* ==========================================================================
    4. Navbar Style
+<<<<<<< HEAD
    ========================================================================== */
 .navbar-brand {
   position: relative;
@@ -593,6 +680,137 @@ button:focus {
   }
 }
 
+=======
+   ========================================================================== */
+.navbar-brand {
+  position: relative;
+  padding: 0px;
+}
+
+.top-nav-collapse {
+  background: #fff;
+  z-index: 999999;
+  top: 0px !important;
+  box-shadow: 0px 3px 6px 3px rgba(0, 0, 0, 0.06);
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+  background: #fff !important;
+}
+
+.top-nav-collapse .navbar-brand {
+  top: 0px;
+}
+
+.top-nav-collapse .navbar-nav .nav-link {
+  color: #333 !important;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link:hover {
+  color: #61D2B4 !important;
+}
+
+.top-nav-collapse .navbar-nav .nav-link.active {
+  color: #fff !important;
+}
+
+.indigo {
+  background: transparent;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+  color: #fff;
+  padding: 0 22px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 40px;
+  border-radius: 30px;
+  background: transparent;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-expand-lg .navbar-nav li a:hover,
+.navbar-expand-lg .navbar-nav li .active > a,
+.navbar-expand-lg .navbar-nav li a:focus {
+  color: #61D2B4;
+}
+
+.navbar .nav-link.active {
+  color: #fff !important;
+  background: #61D2B4;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.slicknav_btn {
+  border-color: #61D2B4;
+}
+
+.slicknav_menu .slicknav_icon-bar {
+  background: #61D2B4;
+}
+
+/* only small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+  #nav-main li a.nav-link {
+    padding-top: 18px;
+  }
+}
+
+.navbar-toggler {
+  display: none;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.slicknav_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar-header {
+    width: 100%;
+  }
+  .navbar-brand {
+    position: absolute;
+    padding: 15px;
+    top: 0;
+  }
+  .navbar-brand img {
+    width: 70%;
+  }
+  #mobile-menu {
+    display: none;
+  }
+  .slicknav_menu {
+    display: block;
+  }
+  .slicknav_nav .active a {
+    background: #61D2B4;
+    color: #fff;
+  }
+  .slicknav_nav a:hover, .slicknav_nav .active {
+    color: #61D2B4;
+    background: #f8f9fa;
+  }
+  .slicknav_nav .dropdown li a.active {
+    background: #f8f9fa;
+    color: #61D2B4;
+  }
+}
+
+>>>>>>> 08e88deac8f5da091fe9915c365287e1078a6e1f
 /* ==========================================================================
   5. Services section
    ========================================================================== */
@@ -1101,6 +1319,7 @@ button:focus {
 }
 
 /* ==========================================================================
+<<<<<<< HEAD
   13. Blog
    ========================================================================== */
 #blog .blog-item-wrapper {
@@ -1170,6 +1389,77 @@ button:focus {
   color: #61D2B4;
 }
 
+=======
+  13. Blog 
+   ========================================================================== */
+#blog .blog-item-wrapper {
+  background: #fff;
+  border-radius: 0px;
+  -webkit-transition: transform 0.2s linear, -webkit-box-shadow 0.2s linear;
+  -moz-transition: transform 0.2s linear, -moz-box-shadow 0.2s linear;
+  transition: transform 0.2s linear, box-shadow 0.2s linear;
+}
+
+#blog .blog-item-wrapper:hover .blog-item-img:before {
+  opacity: 1;
+  height: 100%;
+  width: 100%;
+}
+
+#blog .blog-item-img {
+  position: relative;
+}
+
+#blog .blog-item-img img {
+  width: 100%;
+}
+
+#blog .blog-item-text {
+  padding: 20px 0;
+}
+
+#blog .blog-item-text h3 {
+  line-height: 26px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+#blog .blog-item-text h3 a {
+  color: #333;
+}
+
+#blog .blog-item-text h3 a:hover {
+  color: #61D2B4;
+}
+
+#blog .blog-item-text p {
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+
+.meta-tags {
+  margin-bottom: 20px;
+}
+
+.meta-tags span {
+  color: #999;
+  margin-right: 10px;
+}
+
+.meta-tags span i {
+  margin-right: 5px;
+}
+
+.meta-tags span a {
+  color: #999;
+}
+
+.meta-tags span a:hover {
+  color: #61D2B4;
+}
+
+>>>>>>> 08e88deac8f5da091fe9915c365287e1078a6e1f
 /* ==========================================================================
   14. Contact Us
   ========================================================================== */
